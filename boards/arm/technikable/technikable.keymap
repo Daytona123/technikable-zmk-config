@@ -140,6 +140,7 @@
         };
         
     };
+};
 
 #define QWERTY_BASE 1
 
