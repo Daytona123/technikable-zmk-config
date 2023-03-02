@@ -9,6 +9,12 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define BAS_L 0
+#define NAV_L 1
+#define NUM_L 2
+#define SYM_L 3
+#define BT_L  4
+
 &mt {
     flavor = "tap-preferred";
     tapping_term_ms = <200>;
@@ -95,7 +101,7 @@
             combo_bt {
             timeout-ms = <50>;
             key-positions = <34 35>;
-            bindings = <&mo BT_L>;
+            bindings = <&mo 4>;
         };
         
          combo_bootloader {
@@ -135,14 +141,6 @@
 // #define TBLE_ORTHO   true
 // #define TBLE_MIT     true
 #define TBLE_DUAL_2U true
-
-#define BAS_L 0
-#define NAV_L 1
-#define NUM_L 2
-#define SYM_L 3
-#define BT_L  4
-
-
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
