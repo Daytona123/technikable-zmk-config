@@ -21,6 +21,11 @@
     quick_tap_ms = <0>;
 };
 
+// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
+&lt { 
+    quick_tap_ms = <200>; 
+    };
+
 / { 
 
     combos {
@@ -141,9 +146,6 @@
 // #define TBLE_ORTHO   true
 // #define TBLE_MIT     true
 #define TBLE_DUAL_2U true
-
-// Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
 
 #define BT(n) BT_SEL n
 
