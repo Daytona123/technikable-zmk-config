@@ -19,6 +19,7 @@
 #define NAV_L 1
 #define NUM_L 2
 #define SYM_L 3
+#define GAM_L 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
 &lt { quick_tap_ms = <200>; };
@@ -110,6 +111,22 @@
 &trans     &kp TILDE  &kp LS(N1) &kp LS(N2)  &kp LS(N3)   &kp LS(BSLH) &trans     &trans    &trans       &trans       &trans     &trans
 #ifdef TBLE_DUAL_2U
                       &trans     &kp LS(N0)              &trans                    &trans       &trans         &trans
+#elif defined(TBLE_MIT)
+                      &trans     &kp LS(N0)      &trans                &trans             &trans      &trans   &trans
+#else
+                      &trans     &kp LS(N0)      &trans          &trans       &trans    &trans  &trans         &none
+#endif
+            >;
+        };
+
+game_layer {
+            label = "Gam";
+            bindings = <
+&kp ESC     &kp Q   &kp W &kp E  &kp R   &kp T     &kp Y     &kp U    &kp I       &kp O       &kp P     &kp BSPC
+&kp LSFT     &kp A  &kp S &kp D  &kp F   &kp G     &kp H     &kp J    &kp K       &kp L       &kp SEMI     &kp RSFT
+&kp LCTL     &kp Z  &kp X &kp C  &kp V   &kp B &kp N     &kp M    &kp COMM       &kp DOT      &kp SLSH     &kp ENT
+#ifdef TBLE_DUAL_2U
+                      &kp LALT     &kp LGUI              &kp SPC                    &kp BSPC       &kp RGUI         &RALT
 #elif defined(TBLE_MIT)
                       &trans     &kp LS(N0)      &trans                &trans             &trans      &trans   &trans
 #else
