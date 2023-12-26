@@ -87,7 +87,7 @@
 
         layer7 {
             bindings = <
-                &kp LBKT &kp DOT &kp  &kp T &trans &trans &kp N &kp I &trans &kp SEMI 
+                &kp LBKT &kp DOT &kp MINUS &kp T &trans &trans &kp N &kp I &trans &kp SEMI 
 	        >;
         };
 
