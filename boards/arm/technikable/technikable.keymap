@@ -30,11 +30,11 @@
             bindings = <&kp TAB>;
         };
 
-//        combo_ent {
-//            timeout-ms = <50>;
-//            key-positions = <6 7 8 9>;
-//            bindings = <&kp ENT>;
-//        };
+	combo_ent {
+		timeout-ms = <50>;
+		key-positions = <6 7 8 9>;
+		bindings = <&kp RETURN>;
+	};
     };
 };
 
@@ -91,11 +91,11 @@
 	        >;
         };
 
-//        layer8 {
-//           bindings = <
-//                &kp FLSH &kp RBKT &kp SQT &kp BSPC &trans &trans &kp M &kp EXCL &kp SEMI &trans
-// 	       >;
-//        };
+	layer8 {
+	  bindings = <
+		&kp FSLH &kp RBKT &kp SQT &kp BSPC &trans &trans &kp M &kp EXCL &kp SEMI &trans
+		>;
+	};
 
         layer9 {
             bindings = <
