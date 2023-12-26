@@ -91,11 +91,11 @@
 	        >;
         };
 
-        layer8 {
-            bindings = <
-                &kp FLSH &kp RBKT &kp SQT &kp BSPC &trans &trans &kp M &kp EXCL &kp SEMI &trans
-	        >;
-        };
+//        layer8 {
+//           bindings = <
+//                &kp FLSH &kp RBKT &kp SQT &kp BSPC &trans &trans &kp M &kp EXCL &kp SEMI &trans
+// 	       >;
+//        };
 
         layer9 {
             bindings = <
