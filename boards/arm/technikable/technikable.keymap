@@ -30,18 +30,18 @@
             bindings = <&kp TAB>;
         };
 
-#        combo_ent {
-#            timeout-ms = <50>;
-#            key-positions = <6 7 8 9>;
-#            bindings = <&kp ENT>;
-#        };
+//        combo_ent {
+//            timeout-ms = <50>;
+//            key-positions = <6 7 8 9>;
+//            bindings = <&kp ENT>;
+//        };
     };
 };
 
 / {
     keymap {
         compatible = "zmk,keymap";
-#        
+        
         layer0 {
             bindings = <
                 &lt 1 A &lt 2 S &lt 3 E &lt 4 T &kp SPC &kp LSFT &lt 5 N &lt 6 I &lt 7 O &lt 8 P 
