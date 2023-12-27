@@ -82,7 +82,7 @@
 
         layer5 {
             bindings = <
-                &kp Q &kp S &kp E &kp B &trans &trans &trans &kp H &kp U &kp M 
+                &kp Q &kp S &kp Y &kp B &trans &trans &trans &kp H &kp U &kp M 
 	        >;
         };
 
@@ -94,7 +94,7 @@
 
         layer7 {
             bindings = <
-                &kp LBKT &kp DOT &kp MINUS &kp T &trans &trans &kp N &kp I &trans &kp SEMI 
+                &kp LBKT &kp DOT &kp MINUS &kp T &trans &trans &kp N &kp L &trans &kp SEMI 
 	        >;
         };
 
