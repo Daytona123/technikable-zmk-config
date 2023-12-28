@@ -22,7 +22,7 @@
         combo_num {
             timeout-ms = <50>;
             key-positions = <0 3 6 9>;
-            bindings = <&tog 9>;
+            bindings = <&to 9>;
         };
 
         combo_tab {
